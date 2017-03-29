@@ -13,6 +13,9 @@ Macaw::get('/',function (){
 
 Macaw::get('/api','IndexController@index');
 
+Macaw::get('/xss',"IndexController@xssDemo");
+Macaw::post('/xss',"IndexController@xssAccept");
+
 Macaw::$error_callback=function (){
     throw new Exception("controller and action not found");
 };

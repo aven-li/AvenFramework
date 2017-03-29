@@ -3,7 +3,8 @@
   "noahbuscher/macaw": "dev-master",
   "illuminate/database": "*",
    "filp/whoops":"*",
-  "twig/twig": "^2.0"
+  "twig/twig": "^2.0",
+  "symfony/var-dumper": "^3.2"
  },
  "autoload":{
    "classmap":[

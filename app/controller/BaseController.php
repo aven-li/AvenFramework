@@ -26,7 +26,7 @@ abstract class BaseController
         $loader = new \Twig_Loader_Filesystem(BASE_PATH.'/'.APP_PATH . '/view');
         $twig = new \Twig_Environment($loader, array(
             'debug'=>IS_DEBUG,
-            'cache' => BASE_PATH  . '/cache',
+            'cache' => BASE_PATH.'/cache',
         ));
         $template=$twig->loadTemplate($file.self::$templateSuffix);
         $template->display($this->assign);

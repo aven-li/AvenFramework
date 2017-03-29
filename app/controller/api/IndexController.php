@@ -9,12 +9,13 @@
 class IndexController extends BaseController
 {
     public function index(){
+        //Twig Demo
         $this->assign('info',"this is info");
         $this->assign('mvc',"this is mvc");
         $this->display('Api/index');
-//       $article=Article::first();
-//        print_r($article);
+        //ORM Model Demo
+        $article=Article::first();
+        dump($article);
     }
-
 
 }
