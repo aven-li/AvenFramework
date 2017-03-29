@@ -2,7 +2,8 @@
  "require":{
   "noahbuscher/macaw": "dev-master",
   "illuminate/database": "*",
-   "filp/whoops":"*"
+   "filp/whoops":"*",
+  "twig/twig": "^2.0"
  },
  "autoload":{
    "classmap":[

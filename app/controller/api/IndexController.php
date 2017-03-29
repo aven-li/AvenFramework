@@ -9,7 +9,12 @@
 class IndexController extends BaseController
 {
     public function index(){
-       $article=Article::first();
-        print_r($article);
+        $this->assign('info',"this is info");
+        $this->assign('mvc',"this is mvc");
+        $this->display('Api/index');
+//       $article=Article::first();
+//        print_r($article);
     }
+
+
 }
